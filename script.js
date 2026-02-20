@@ -24,7 +24,7 @@ const p1 = createPromise();
 const p2 = createPromise();
 const p3 = createPromise();
 
-promise.all([p1, p2, p3]).then(function(values) {
+Promise.all([p1, p2, p3]).then(function(values) {
 	tbody.innerHTML = "";
 
 	values.forEach(function(time, index) {
